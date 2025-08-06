@@ -1,0 +1,27 @@
+{/* <script> */}
+  {/* const words = ["Visibility", "Reach", "Impact", "Brilliance"];
+  let currentIndex = 0;
+  const morphContainer = document.getElementById("morph-word");
+
+  function morphToWord(word) {
+    morphContainer.innerHTML = ''; 
+
+    word.split('').forEach((char, i) => {
+      const span = document.createElement('span');
+      span.classList.add('letter');
+      span.textContent = char;
+      morphContainer.appendChild(span);
+
+      setTimeout(() => {
+        span.classList.add('visible');
+      }, i * 80);
+    });
+  }
+
+  morphToWord(words[currentIndex]);
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % words.length;
+    morphToWord(words[currentIndex]);
+  }, 3000);
+</script> */}
