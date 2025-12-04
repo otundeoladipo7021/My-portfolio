@@ -13,7 +13,7 @@ export default function ParticlesBackground() {
       color: { value: "#22d3ee" },
       links: { enable: true, color: "#22d3ee" },
       move: { enable: true, speed: 2 },
-      number: { value: 50 },
+      number: { value: 80 },
       opacity: { value: 0.5 },
       shape: { type: "circle" },
       size: { value: { min: 1, max: 4 } },

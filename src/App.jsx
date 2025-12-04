@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar";
 import VantaBackground from "./components/VantaBackground";
 import About from "./components/About";
+import Skills from "./components/Skills";
+import FeaturedProjects from "./components/FeaturedProjects";
 import { FaChevronDown } from "react-icons/fa";
 import Projects from "./components/Projects";
 import ResumeTimeline from "./components/ResumeTimeline";
@@ -13,37 +15,42 @@ function App() {
       <Navbar />
       <VantaBackground />
       <section
-        id="home"
-        className="h-screen flex flex-col items-center justify-center text-center px-4 relative z-10"
-      >
-        <h1 className="text-5xl font-extrabold mb-4">
-          Oluwajomiloju Tunde-Oladipo
-        </h1>
-        <p className="text-xl text-gray-300 mb-8">
-          Web Developer & Creative Designer
-        </p>
-        <div className="flex gap-4">
-          <a
-            href="#projects"
-            className="bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-bold px-6 py-3 rounded-lg transition"
-          >
-            View Projects
-          </a>
-         <a
-  href="#about"
-  className="border border-cyan-500 hover:bg-cyan-500 hover:text-gray-900 text-cyan-500 font-bold px-6 py-3 rounded-lg transition"
->
-  Let’s Explore
-</a>
-        </div>
+      id="home"
+      className="h-screen flex flex-col items-center justify-center text-center px-4 relative z-10"
+    >
+      <h1 className="text-5xl font-extrabold mb-4 text-white">
+        Oluwajomiloju Tunde-Oladipo
+      </h1>
+      <p className="text-xl text-gray-300 mb-2">
+        Cloud Application Developer & Full-Stack Engineer
+      </p>
+      <p className="text-md text-cyan-400 mb-8">
+        Specializing in Cloud Infrastructure, DevOps, and Modern Web Development
+      </p>
+      <div className="flex gap-4">
         <a
-  href="#about"
-  className="mt-8 text-cyan-400 text-3xl animate-bounce hover:text-cyan-300 transition duration-300"
->
-  <FaChevronDown />
-</a>
-      </section>
+          href="#featured-projects"
+          className="bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-bold px-6 py-3 rounded-lg transition"
+        >
+          View Projects
+        </a>
+        <a
+          href="#about"
+          className="border border-cyan-500 hover:bg-cyan-500 hover:text-gray-900 text-cyan-500 font-bold px-6 py-3 rounded-lg transition"
+        >
+          Let's Explore
+        </a>
+      </div>
+      <a
+        href="#about"
+        className="mt-8 text-cyan-400 text-3xl animate-bounce hover:text-cyan-300 transition duration-300"
+      >
+        <FaChevronDown />
+      </a>
+    </section>
       <About />
+      <Skills />
+      <FeaturedProjects />
       <ResumeTimeline />
       <Projects />
       <Contact />
